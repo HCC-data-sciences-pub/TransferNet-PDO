@@ -1,2 +1,2 @@
-# PDO_AI-model_paper
+# PDO_AI model paper
 repo for PDO_AI paper
