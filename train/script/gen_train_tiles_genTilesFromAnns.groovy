@@ -28,7 +28,7 @@ for (ann in target_anns) {
     .includePartialTiles(false)      // keep only tiles with intact required size !!
     .downsample(downsample)          // Define export resolution
     .imageExtension('.png')          // Define file extension for original pixels (often .tif, .jpg, '.png' or '.ome.tif')
-    .tileSize(2000)                   // Define size of each tile, in pixels 
+    .tileSize(256)                   // Define size of each tile, in pixels 
     .annotatedCentroidTilesOnly(true)  // If true, only export tiles if there is a (classified) annotation present
     .overlap(0)                // Define overlap, in pixel units at the export resolution
     .writeTiles(pathOutput)    // Write tiles to the specified directory  

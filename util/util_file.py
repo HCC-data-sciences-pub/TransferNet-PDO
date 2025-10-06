@@ -117,34 +117,6 @@ def copy_move_selected_files(outdir,indir,refdir,copy=True,ft = '.geojson'):   #
             c += 1
         except:
             pass    
-    print('copied %d files,job done!'%c)                 
+    print('copied %d files,job done!'%c)    
+             
                           
-def gen_fpTxt(outdir,indir,n):
-    '''
-    generate txt file contain file paths, also make output folder for each txt file to store prediction output later on
-    n: how much path should be in each txt file generated
-    '''
-    outdir = Path(outdir)
-    outdir.mkdir(parents=True,exist_ok=True)
-    
-    indir = Path(indir)  
-    remove_hidden_files(indir)
-    
-    pn_ls = sorted(indir.iterdir())
-    n_pn = len(pn_ls)
-    print('total number of files: %d' % n_pn)
-    n_iter = n_pn // n 
-    if n_pn % n != 0:
-        n_iter = n_iter + 1 
-    
-    for i in range(n_iter):
-        output = outdir.joinpath('output%d' % (i+1))
-        output.mkdir(parents=True,exist_ok=True)
-        txt_fn = outdir.joinpath('fp%d.txt'% (i+1))
-        start = i * n
-        print(start)
-        with open (txt_fn,'a') as f:
-            for j in range(start,n_pn):
-                f.write(str(pn_ls[j]) + '\n')
-                if (j+1) % n == 0 :
-                    break
