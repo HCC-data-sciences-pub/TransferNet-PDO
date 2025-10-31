@@ -7,7 +7,8 @@
 
 ## 1. Install hover_net package following instructions on https://github.com/vqdang/hover_net
 ## 2. Download hover_net source codes from https://github.com/vqdang/hover_net
-## 3. Train hover_net model using annotated PDO cells
+## 3. Download and install QuPath-0.5.1-arm64 or other versions that can run the groovy scripts included in this repository
+## 4. Train hover_net model using annotated PDO cells
 1. Select tumor or normal regions on PDO whole slide images(eg: svs files)               
 2. Manually draw and classify training tiles of 256 x 256 px within those regions 
 3. Generate training tiles using genTilesFromAnn.groovy in qupath software
@@ -19,7 +20,7 @@
 9. Replace /hover_net/dataloader/train_loader.py with train_loader.py in modified_modules of this repository
 10. Replace /hover_net/models/hovernet/post_procss.py with train_loader.py in modified_modules of this repository
 12. Train new model following instructions on https://github.com/vqdang/hover_net
-## 4. Predict new PDO samples using pre-trained model described in our paper:
+## 5. Predict new PDO samples using pre-trained model described in our paper:
 1. Download pre-trained model checkpoint from https://huggingface.co/jic115/TransferNet-PDO/tree/main
 2. Replace /hover_net/infer/wsi.py with wsi.py in modified_modules of this repository if many cells are not got predicted
 3. Download the infer directory from this repository and supplement proper information to the slurm files
