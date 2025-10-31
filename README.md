@@ -1,6 +1,9 @@
 # PDO_AI model paper
   This repository stores codes and related files to generate the TransfNet-PDO model describled in Doerfler, Chen, et al. Integrating Artificial Intelligence-Driven Digital Pathology and Genomics to Establish Patient-Derived Organoids as New Approach Methodologies for Drug Response in Head and Neck Cancer. 2025, Oral Oncology (in press).
-  <img width="202" height="109" alt="image" src="https://github.com/user-attachments/assets/bf9af8d4-48a4-4eb4-98d6-8978528ae876" />
+
+<img width="2748" height="1637" alt="Fig_1 new - transfernet-pdo" src="https://github.com/user-attachments/assets/016d5006-0b0c-4dc3-94a0-65bea262e6a2" />
+
+  
 
 ## 1. Install hover_net package following instructions on https://github.com/vqdang/hover_net
 ## 2. Download hover_net source codes from https://github.com/vqdang/hover_net
