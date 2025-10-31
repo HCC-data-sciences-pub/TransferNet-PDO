@@ -7,7 +7,7 @@
 
 ## 1. Install hover_net package following instructions on https://github.com/vqdang/hover_net
 ## 2. Download hover_net source codes from https://github.com/vqdang/hover_net
-## 3. Download and install QuPath-0.5.1-arm64 or other versions that can run the groovy scripts included in this repository
+## 3. Install QuPath-0.5.1-arm64 or other versions that can run the groovy scripts included in this repository
 ## 4. Train hover_net model using annotated PDO cells
 1. Select tumor or normal regions on PDO whole slide images(eg: svs files)               
 2. Manually draw and classify training tiles of 256 x 256 px within those regions 
