@@ -15,7 +15,7 @@
 10. Replace /hover_net/models/hovernet/post_procss.py with train_loader.py in modified_modules of this repository
 12. Train new model following instructions on https://github.com/vqdang/hover_net
 ## 4. Predict new PDO samples using pre-trained model described in our paper:
-1. Download pre-trained model checkpoint from https://huggingface.co/jic115/PDO_paper_hv_model/tree/main
+1. Download pre-trained model checkpoint from https://huggingface.co/jic115/TransferNet-PDO/tree/main
 2. Replace /hover_net/infer/wsi.py with wsi.py in modified_modules of this repository if many cells are not got predicted
 3. Download the infer directory from this repository and supplement proper information to the slurm files
 4. Run prediction on slurm-enabled GPU cluster using hv_pred_tile.slurm for tiles or hv_pred_wsi.slurm for whole slide images (eg:svs files)
