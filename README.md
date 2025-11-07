@@ -1,10 +1,7 @@
 # TransferNet-PDO
   This repository stores codes and related files to generate the TransfNet-PDO model describled in "Doerfler, Chen, et al. Integrating Artificial Intelligence-Driven Digital Pathology and Genomics to Establish Patient-Derived Organoids as New Approach Methodologies for Drug Response in Head and Neck Cancer". 2025, Oral Oncology (in press).
 
-<img width="2748" height="1637" alt="Fig_1 new - transfernet-pdo" src="https://github.com/user-attachments/assets/016d5006-0b0c-4dc3-94a0-65bea262e6a2" />
-
-  
-
+   ![Example Image](TransferNet-PDO.png)
 ## 1. Install hover_net package following instructions on https://github.com/vqdang/hover_net
 ## 2. Download hover_net source codes from https://github.com/vqdang/hover_net
 ## 3. Install QuPath-0.5.1-arm64 or other versions that can run the groovy scripts included in this repository
